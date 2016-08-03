@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+<h1>我的日誌：</h1>
+{% extends "base.html" %}
+
+{% block content %}<br>
+{% for diary in diaries %}
+{{diary.time}}--{{diary.memo}}<BR>
+{% endfor %}
+{% endblock %}
+        
+</body>
+</html>
